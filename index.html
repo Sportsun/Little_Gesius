@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="hi.png">
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .card11 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card11:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .container h4 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            /* height: auto; */
+        }
+
+        @media (max-width: 576px) {
+            .carousel-inner img {
+                height: 250px;
+            }
+        }
+
+        .equal-height {
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            width: 100%; /* Ensures the image takes the full width of the column */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.png" width="99" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Other
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="classes.html">Classes</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="online-admission.html">Online-Admission</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" height="300px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" height="300px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpg" class="d-block w-100" height="300px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="card11">
+                    <img src="1.jpg" class="img-fluid" alt="Avatar">
+                    <div class="container">
+                        <h4><b>Creative Activity</b></h4>
+                        <p>Unique Style</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="card11">
+                    <img src="2.jpg" class="img-fluid" alt="Avatar">
+                    <div class="container">
+                        <h4><b>Personality Development</b></h4>
+                        <p>For Self Perfection</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="card11">
+                    <img src="3.jpg" class="img-fluid" alt="Avatar">
+                    <div class="container">
+                        <h4><b>Career Growth</b></h4>
+                        <p>For Achieving The Goals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="card11">
+                    <img src="1.jpg" class="img-fluid" alt="Avatar">
+                    <div class="container">
+                        <h4><b>Finishing Touch</b></h4>
+                        <p>Enhance The Knowledge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">About Playschool</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Who we are?</h3>
+                <p>
+                    BACHPAN is the flagship brand of S. K. Educations Pvt. Ltd. – The Nation’s leading Preschool
+                    Education provider.
+                </p>
+                <h3>What do we do?</h3>
+                <p>
+                    Our Nursery schools are concerned with the early development of children and introducing them to
+                    structured learning through a systematic and innovative way.
+                </p>
+                <h3>Where we are?</h3>
+                <p>
+                    As of now, we have a nationwide reach with a Chain of 1100+ Pre Schools spread across the length
+                    and breadth of the country.
+                </p>
+                <h3>What's next?</h3>
+                <p>
+                    We’ve expanded into the (10+2) formal schooling segment with a network of 100+ Academic Heights
+                    Public Schools (AHPS) across the country.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="about.jpg" class="img-fluid" alt="About Us" style="max-width: 80%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="alert alert-light" role="alert">
+            <h2 class="text-center">REGULAR UPDATES</h2>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 mb-2">
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+            </div>
+            <div class="col-12 mb-2">
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="text-center">Activities</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g1.jpg" class="img-fluid equal-height" alt="Activity 1">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g2.png" class="img-fluid equal-height" alt="Activity 2">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g3.png" class="img-fluid equal-height" alt="Activity 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g4.jpg" class="img-fluid equal-height" alt="Activity 4">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g5.jfif" class="img-fluid equal-height" alt="Activity 5">
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <img src="g6.jpg" class="img-fluid equal-height" alt="Activity 6">
+            </div>
+        </div>
+    </div>
+
+    <footer style="background:black; padding:20px;">
+        <div class="container text-center">
+            <p style="color:#fff;">Copyright 2022. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
